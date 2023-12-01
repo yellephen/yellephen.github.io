@@ -24,6 +24,6 @@ So here it was authenticating as the domain computer account and `net user /doma
 ![](/images/netsecuritygp.png?raw=true)
 
 Looked promising. So I looked up the page for the setting
-https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm
+[https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm).
 
 Turns out that at Vista/2008 the default for this setting changed. Before then, `nt authority\system` would authenticate over the network as anonymous and including and after, it defaults to authenticating as the domain computer account.
