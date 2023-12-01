@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Is NT Authority\System Anonymous on the Network"
+title:  "Is NT Authority\\System Anonymous on the Network"
 date:   2022-07-22 08:42:53 +1100
 categories: Investigation
 ---
