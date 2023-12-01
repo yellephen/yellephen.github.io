@@ -111,7 +111,7 @@ def hRCreateServiceW(dce, hSCManager, lpServiceName, lpDisplayName, dwDesiredAcc
     return dce.request(createService)
 ```
 
-I searched for a reference to hRCreateServiceW and found this MS document and the parameters seemed to line up [CreateServiceW function (winsvc.h) - Win32 apps | Microsoft Learn](https://learn.microsoft.com/en-us/windows/win32/api/winsvc/nf-winsvc-createservicew). The lpServiceStartName is what I was interested in because that's the user under which the service will run - maybe I could just update this and I'd be good. I got excited and made my patch so that I could pass a username at the command line and passed it all the way down to lpServiceStartName but I got an authentication error.
+I searched for a reference to hRCreateServiceW and found this MS document and the parameters seemed to line up https://learn.microsoft.com/en-us/windows/win32/api/winsvc/nf-winsvc-createservicew. The lpServiceStartName is what I was interested in because that's the user under which the service will run - maybe I could just update this and I'd be good. I got excited and made my patch so that I could pass a username at the command line and passed it all the way down to lpServiceStartName but I got an authentication error.
 
 I looked around a bit more and noticed that what impacket-psexec was doing was passing null to lpServiceStartName and the documentation states.
 ```
