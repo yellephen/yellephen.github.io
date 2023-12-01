@@ -21,7 +21,7 @@
 title: Working Title
 email: yellephen@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Looking into security ideas an concepts. I work in offsec labs, HTB, THM, etc. and write about things I look further into or things I think are tips at this point here.
+  Looking into security ideas and concepts. I work in offsec labs, HTB, THM, etc. and write about things I look further into or things I think are tips at this point.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yellephen
