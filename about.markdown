@@ -4,15 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Daniel Walters. I live in Canberra, Australia. I'm interested in cyber security.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+If you're looking here as an employer, a bit of my history.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+### Education
+- Master of Cyber Security
+- Bachelor of IT
+- OSCP
+- CREST CRT
 
-
-[jekyll-organization]: https://github.com/jekyll
+### Experience
+A couple of years experience as a pentester and a bunch of IAM experience before that.
