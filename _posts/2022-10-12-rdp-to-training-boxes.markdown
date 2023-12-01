@@ -7,7 +7,7 @@ categories: Tip
 
 I've encountered this a few times where lab boxes have RDP but rdesktop or xfreerdp on kali can't connect. I think it's something to do with credssp and the mutual authentication it can be configured to do - don't really know.
 You get this when you try to connect from kali with rdesktop.
-![image of rdesktop failing](https://github.com/yellephen/yellephen.github.io/blob/main/_images/rdesktop.png?raw=true)
+![image of rdesktop failing](/images/rdesktop.png?raw=true)
 
 I'm running a windows host with a kali VM and a method I've found that often works is to use the windows mstsc and proxy through my instance of kali which is on the VPN I need to be on. To do this.
 
@@ -22,7 +22,7 @@ ssh -L 13389:10.129.120.210:3389 kali@192.168.43.130
 ```
 
 Then RDP to the port at localhost on the host machine.
-![image of mstsc connecting to localhost](https://github.com/yellephen/yellephen.github.io/blob/main/_images/rdp.png?raw=true)
+![image of mstsc connecting to localhost](/images/rdp.png?raw=true)
 
 And you should get logon prompt. Go nuts.
-![image of credential prompt for mstsc](https://github.com/yellephen/yellephen.github.io/blob/main/_images/creds.png?raw=true)
+![image of credential prompt for mstsc](/images/creds.png?raw=true)
