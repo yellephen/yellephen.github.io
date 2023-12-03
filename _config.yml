@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Working Title
+title: yellephens posts
 email: yellephen@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Looking into security ideas and concepts. I work in offsec labs, HTB, THM, etc. and write about things I look further into or things I think are tips at this point.
