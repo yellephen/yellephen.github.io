@@ -7,7 +7,7 @@ categories: Tip
 
 In the OSEP course, there's alot of evasion techniques. This one is a good combination of ease of use and success in evading things like AV and CLM.
 
-```
+```PowerShell
 $type = @"
 using System;
 using System.IO;
